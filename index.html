@@ -14,14 +14,11 @@
     }
 
     body {
-      height: 100vh;
+      min-height: 100vh;
       background: #0f1117;
       background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="circuit" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M0,40 h80 M40,0 v80" stroke="%2366f2ff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23circuit)"/></svg>');
       animation: moveBackground 60s linear infinite;
       background-size: 300px 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding: 2rem;
     }
 
@@ -40,10 +37,13 @@
       padding: 3rem;
       color: #ffffff;
       box-shadow: 0 0 40px rgba(0,0,0,0.3);
+      margin: 0 auto;
+      margin-top: 4vh;
+      margin-bottom: 4vh;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
       margin-bottom: 0.5rem;
       color: #66f2ff;
       text-align: center;
@@ -96,12 +96,12 @@
 
     <h2>Über mich</h2>
     <p>
-      Ich bin leidenschaftlicher IT-Enthusiast mit dem Fokus auf Beratung, Instandnahme und dem Vertrieb von Elektronischen Produkten und Bauteilen.
+      Ich bin leidenschaftlicher IT-Enthusiast mit dem Fokus auf Beratung, Instandnahme und dem Vertrieb von elektronischen Produkten und Bauteilen.
     </p>
 
     <h2>Lebenslauf</h2>
     <ul>
-      <li><strong>2023 – Heute:</strong> Mitarbeiter im Bereich Digitaliserungsmanagement</li>
+      <li><strong>2023 – Heute:</strong> Mitarbeiter im Bereich Digitalisierungsmanagement</li>
       <li><strong>2021 – 2023:</strong> Fachhochschulreife</li>
       <li><strong>2016 – 2021:</strong> Realschule</li>
     </ul>
@@ -109,7 +109,7 @@
     <h2>Skills</h2>
     <ul>
       <li>HTML, CSS, JavaScript</li>
-      <li>Computer Instandnahme</li>
+      <li>Computer-Instandsetzung</li>
       <li>Hard- und Softwarekenntnisse</li>
     </ul>
 
@@ -120,13 +120,13 @@
 
     <h2>Kontakt</h2>
     <p>
-      📧 E-Mail: rothackerdavid@gmail.com<br>
+      📧 E-Mail: <a href="mailto:rothackerdavid@gmail.com">rothackerdavid@gmail.com</a><br>
       💼 LinkedIn: <a href="https://linkedin.com/in/max" target="_blank">linkedin.com/in/max</a><br>
       💻 GitHub: <a href="https://github.com/max" target="_blank">github.com/max</a>
     </p>
 
     <footer>
-      &copy; 2025 Max Mustermann
+      &copy; 2025 David Rothacker
     </footer>
   </div>
 </body>
