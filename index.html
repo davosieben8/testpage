@@ -1,10 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>Meine Webseite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mein Lebenslauf</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      background: #333;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #4b6cb7;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Willkommen auf meiner Webseite!</h1>
-  <p>Diese Seite ist mit GitHub Pages erstellt.</p>
+
+  <header>
+    <h1>Max Mustermann</h1>
+    <p>Webentwickler | Designer | Problemlöser</p>
+  </header>
+
+  <nav>
+    <a href="#ueber-mich">Über mich</a>
+    <a href="#lebenslauf">Lebenslauf</a>
+    <a href="#skills">Skills</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="ueber-mich">
+    <h2>Über mich</h2>
+    <div class="card">
+      <p>Hier kommt ein kurzer Text über dich – wer du bist, was dich ausmacht, was du suchst.</p>
+    </div>
+  </section>
+
+  <section id="lebenslauf">
+    <h2>Lebenslauf</h2>
+    <div class="card">
+      <ul>
+        <li><strong>2022 – heute:</strong> Webentwickler bei Beispiel GmbH</li>
+        <li><strong>2019 – 2022:</strong> Informatik-Studium an der Uni Musterstadt</li>
+        <li><strong>2017 – 2019:</strong> Ausbildung zum Fachinformatiker</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>React / Vue / SASS</li>
+        <li>Git / GitHub / CI/CD</li>
+        <li>Responsive Design / UX/UI</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projekte">
+    <h2>Projekte</h2>
+    <div class="card">
+      <p>Hier kannst du deine coolsten Projekte mit Link, Screenshots oder kurzen Beschreibungen einfügen.</p>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="card">
+      <p>Email: max.mustermann@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/deinname" target="_blank">linkedin.com/in/deinname</a></p>
+      <p>GitHub: <a href="https://github.com/deinbenutzername" target="_blank">github.com/deinbenutzername</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Max Mustermann. Alle Rechte vorbehalten.</p>
+  </footer>
+
 </body>
 </html>
