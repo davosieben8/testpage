@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mein Lebenslauf</title>
+  <title>Max Mustermann – Lebenslauf</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -15,37 +15,37 @@
 
     body {
       height: 100vh;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+      background: #0f1117;
+      background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="circuit" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M0,40 h80 M40,0 v80" stroke="%2366f2ff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23circuit)"/></svg>');
+      animation: moveBackground 60s linear infinite;
+      background-size: 300px 300px;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 2rem;
     }
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    @keyframes moveBackground {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
     }
 
     .container {
       backdrop-filter: blur(15px);
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 20px;
       max-width: 800px;
       width: 100%;
       padding: 3rem;
       color: #ffffff;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 40px rgba(0,0,0,0.3);
     }
 
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      color: #00ffe0;
+      color: #66f2ff;
       text-align: center;
     }
 
@@ -53,7 +53,7 @@
       font-size: 1.5rem;
       margin-top: 2rem;
       margin-bottom: 1rem;
-      color: #00ffe0;
+      color: #66f2ff;
     }
 
     p, li {
@@ -67,7 +67,7 @@
     }
 
     a {
-      color: #00ffe0;
+      color: #66f2ff;
       text-decoration: none;
     }
 
@@ -96,34 +96,33 @@
 
     <h2>Über mich</h2>
     <p>
-      Hier steht ein kurzer Text über dich – wer du bist, deine Motivation, dein Stil. Schreibe hier deine persönliche Botschaft.
+      Ich bin leidenschaftlicher Entwickler mit Fokus auf moderne Webtechnologien und nutzerzentriertes Design.
     </p>
 
     <h2>Lebenslauf</h2>
     <ul>
       <li><strong>2023 – Heute:</strong> Entwickler bei XYZ Innovations</li>
-      <li><strong>2020 – 2023:</strong> Studium Informatik in Musterstadt</li>
+      <li><strong>2020 – 2023:</strong> Studium Informatik</li>
       <li><strong>2018 – 2020:</strong> Ausbildung zum Fachinformatiker</li>
     </ul>
 
     <h2>Skills</h2>
     <ul>
-      <li>HTML, CSS, JavaScript (modern)</li>
-      <li>React, Tailwind, Svelte</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Vue, SASS</li>
       <li>GitHub, CI/CD, Docker</li>
-      <li>UI/UX, Clean Code, Dark Mode</li>
     </ul>
 
     <h2>Projekte</h2>
     <p>
-      Beschreibe hier eigene Projekte mit Links – z. B. Portfolio-Seite, Web-App, GitHub-Projekt.
+      Portfolio, Web-Apps und Open-Source-Projekte – mehr auf meinem GitHub!
     </p>
 
     <h2>Kontakt</h2>
     <p>
-      📧 E-Mail: max.mustermann@example.com<br>
-      💼 LinkedIn: <a href="https://linkedin.com/in/deinname" target="_blank">linkedin.com/in/deinname</a><br>
-      💻 GitHub: <a href="https://github.com/deinname" target="_blank">github.com/deinname</a>
+      📧 E-Mail: max@example.com<br>
+      💼 LinkedIn: <a href="https://linkedin.com/in/max" target="_blank">linkedin.com/in/max</a><br>
+      💻 GitHub: <a href="https://github.com/max" target="_blank">github.com/max</a>
     </p>
 
     <footer>
