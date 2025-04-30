@@ -1,138 +1,134 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mein Lebenslauf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
+
     body {
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
+      height: 100vh;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
     }
-    header {
-      background: linear-gradient(to right, #4b6cb7, #182848);
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-    header h1 {
+
+    .container {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      max-width: 800px;
+      width: 100%;
+      padding: 3rem;
+      color: #ffffff;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
-    }
-    nav {
-      background: #333;
-      padding: 1rem;
+      color: #00ffe0;
       text-align: center;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #00ffe0;
     }
-    nav a:hover {
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #4b6cb7;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
+
     footer {
-      background: #222;
-      color: #ccc;
       text-align: center;
-      padding: 2rem 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
+
     @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
+      .container {
+        padding: 2rem;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
     <h1>Max Mustermann</h1>
-    <p>Webentwickler | Designer | Problemlöser</p>
-  </header>
+    <p style="text-align: center;">Webentwickler | Zukunftsdenker | Minimalist</p>
 
-  <nav>
-    <a href="#ueber-mich">Über mich</a>
-    <a href="#lebenslauf">Lebenslauf</a>
-    <a href="#skills">Skills</a>
-    <a href="#projekte">Projekte</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-
-  <section id="ueber-mich">
     <h2>Über mich</h2>
-    <div class="card">
-      <p>Hier kommt ein kurzer Text über dich – wer du bist, was dich ausmacht, was du suchst.</p>
-    </div>
-  </section>
+    <p>
+      Hier steht ein kurzer Text über dich – wer du bist, deine Motivation, dein Stil. Schreibe hier deine persönliche Botschaft.
+    </p>
 
-  <section id="lebenslauf">
     <h2>Lebenslauf</h2>
-    <div class="card">
-      <ul>
-        <li><strong>2022 – heute:</strong> Webentwickler bei Beispiel GmbH</li>
-        <li><strong>2019 – 2022:</strong> Informatik-Studium an der Uni Musterstadt</li>
-        <li><strong>2017 – 2019:</strong> Ausbildung zum Fachinformatiker</li>
-      </ul>
-    </div>
-  </section>
+    <ul>
+      <li><strong>2023 – Heute:</strong> Entwickler bei XYZ Innovations</li>
+      <li><strong>2020 – 2023:</strong> Studium Informatik in Musterstadt</li>
+      <li><strong>2018 – 2020:</strong> Ausbildung zum Fachinformatiker</li>
+    </ul>
 
-  <section id="skills">
     <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li>HTML / CSS / JavaScript</li>
-        <li>React / Vue / SASS</li>
-        <li>Git / GitHub / CI/CD</li>
-        <li>Responsive Design / UX/UI</li>
-      </ul>
-    </div>
-  </section>
+    <ul>
+      <li>HTML, CSS, JavaScript (modern)</li>
+      <li>React, Tailwind, Svelte</li>
+      <li>GitHub, CI/CD, Docker</li>
+      <li>UI/UX, Clean Code, Dark Mode</li>
+    </ul>
 
-  <section id="projekte">
     <h2>Projekte</h2>
-    <div class="card">
-      <p>Hier kannst du deine coolsten Projekte mit Link, Screenshots oder kurzen Beschreibungen einfügen.</p>
-    </div>
-  </section>
+    <p>
+      Beschreibe hier eigene Projekte mit Links – z. B. Portfolio-Seite, Web-App, GitHub-Projekt.
+    </p>
 
-  <section id="kontakt">
     <h2>Kontakt</h2>
-    <div class="card">
-      <p>Email: max.mustermann@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/deinname" target="_blank">linkedin.com/in/deinname</a></p>
-      <p>GitHub: <a href="https://github.com/deinbenutzername" target="_blank">github.com/deinbenutzername</a></p>
-    </div>
-  </section>
+    <p>
+      📧 E-Mail: max.mustermann@example.com<br>
+      💼 LinkedIn: <a href="https://linkedin.com/in/deinname" target="_blank">linkedin.com/in/deinname</a><br>
+      💻 GitHub: <a href="https://github.com/deinname" target="_blank">github.com/deinname</a>
+    </p>
 
-  <footer>
-    <p>&copy; 2025 Max Mustermann. Alle Rechte vorbehalten.</p>
-  </footer>
-
+    <footer>
+      &copy; 2025 Max Mustermann
+    </footer>
+  </div>
 </body>
 </html>
