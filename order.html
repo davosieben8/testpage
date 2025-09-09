@@ -1,0 +1,76 @@
+<!doctype html>
+<p class="lead">Fülle die Felder aus und sende die Bestellung ab. Du erhältst eine Bestätigung per E-Mail.</p>
+
+
+<!-- WICHTIG: ERSETZE DEN ACTION-URL MIT DEINEM FORMSPREE ENDPOINT -->
+<form id="orderForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+
+
+<fieldset>
+<legend>Produkt</legend>
+<label>Art
+<select name="productType" id="productType" required>
+<option value="followers">Follower</option>
+<option value="likes">Likes</option>
+</select>
+</label>
+
+
+<label>Menge
+<select name="quantity" id="quantity" required>
+<option value="100">100</option>
+<option value="200">200</option>
+<option value="500">500</option>
+<option value="1000">1000</option>
+</select>
+</label>
+
+
+<p>Preis: <strong id="price">€0.00</strong></p>
+</fieldset>
+
+
+<fieldset>
+<legend>Kundendaten</legend>
+<label>Instagram-Handle (ohne @)
+<input type="text" name="instaHandle" id="instaHandle" placeholder="z.B. username" required>
+</label>
+<label>Vorname
+<input type="text" name="firstName" id="firstName" required>
+</label>
+<label>E-Mail
+<input type="email" name="email" id="email" required>
+</label>
+<label>Zusätzliche Infos
+<textarea name="notes" id="notes" rows="3" placeholder="z.B. Link zum Post (für Likes)"></textarea>
+</label>
+</fieldset>
+
+
+<input type="hidden" name="_subject" value="Neue Bestellung von InstaBoost">
+<input type="hidden" name="_language" value="de">
+
+
+<div class="form-actions">
+<button type="submit" class="btn">Bestellung absenden</button>
+<a class="btn ghost" href="buy.html">Zurück zu Produkten</a>
+</div>
+
+
+<p class="small">Indem du sendest, akzeptierst du unsere AGB und dass wir dich per E-Mail kontaktieren können.</p>
+
+
+</form>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year3"></span> InstaBoost</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
