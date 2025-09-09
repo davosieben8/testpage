@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Buy — InstaBoost</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+<div class="container">
+<a class="brand" href="index.html">InstaBoost</a>
+<nav>
+<a href="buy.html">Buy</a>
+<a href="order.html">Order</a>
+<a href="index.html#contact">Kontakt</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h1>Produkte</h1>
+<p class="lead">Wähle zwischen Followern und Likes und klicke auf ein Produkt, um Details zu sehen.</p>
+
+
+<div class="products">
+<div class="product-card" data-type="followers">
+<h3>Instagram Follower</h3>
+<p>Kaufen echte (oder aktive) Follower — günstige Pakete für den Start.</p>
+<div class="prices">
+<button class="option" data-qty="100" data-price="4.99">100 — €4.99</button>
+<button class="option" data-qty="500" data-price="19.99">500 — €19.99</button>
+<button class="option" data-qty="1000" data-price="34.99">1000 — €34.99</button>
+</div>
+<a class="btn" href="order.html?type=followers" data-type="followers">Details & Bestellen</a>
+</div>
+
+
+<div class="product-card" data-type="likes">
+<h3>Instagram Likes</h3>
+<p>Likes für einzelne Posts — schnell und zuverlässig.</p>
+<div class="prices">
+<button class="option" data-qty="50" data-price="3.99">50 — €3.99</button>
+<button class="option" data-qty="200" data-price="12.99">200 — €12.99</button>
+<button class="option" data-qty="500" data-price="24.99">500 — €24.99</button>
+</div>
+<a class="btn" href="order.html?type=likes" data-type="likes">Details & Bestellen</a>
+</div>
+</div>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year2"></span> InstaBoost</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
