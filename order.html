@@ -1,8 +1,29 @@
 <!doctype html>
-<p class="lead">Fülle die Felder aus und sende die Bestellung ab. Du erhältst eine Bestätigung per E-Mail.</p>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Order — InstaBoost</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+<div class="container">
+<a class="brand" href="index.html">InstaBoost</a>
+<nav>
+<a href="buy.html">Buy</a>
+<a href="order.html">Order</a>
+<a href="index.html#contact">Kontakt</a>
+</nav>
+</div>
+</header>
 
 
-<!-- WICHTIG: ERSETZE DEN ACTION-URL MIT DEINEM FORMSPREE ENDPOINT -->
+<main class="container order">
+<h1>Bestellung</h1>
+<p class="lead">Wähle dein Paket, gib deine Daten ein und sende die Bestellung ab.</p>
+
+
 <form id="orderForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
 
 
@@ -47,19 +68,10 @@
 </fieldset>
 
 
-<input type="hidden" name="_subject" value="Neue Bestellung von InstaBoost">
-<input type="hidden" name="_language" value="de">
-
-
 <div class="form-actions">
 <button type="submit" class="btn">Bestellung absenden</button>
 <a class="btn ghost" href="buy.html">Zurück zu Produkten</a>
 </div>
-
-
-<p class="small">Indem du sendest, akzeptierst du unsere AGB und dass wir dich per E-Mail kontaktieren können.</p>
-
-
 </form>
 </main>
 
