@@ -1,133 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>David Rothacker – Lebenslauf</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      min-height: 100vh;
-      background: #0f1117;
-      background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="circuit" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M0,40 h80 M40,0 v80" stroke="%2366f2ff" stroke-opacity="0.05" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23circuit)"/></svg>');
-      animation: moveBackground 60s linear infinite;
-      background-size: 300px 300px;
-      padding: 2rem;
-    }
-
-    @keyframes moveBackground {
-      0% { background-position: 0 0; }
-      100% { background-position: 1000px 1000px; }
-    }
-
-    .container {
-      backdrop-filter: blur(15px);
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
-      max-width: 800px;
-      width: 100%;
-      padding: 3rem;
-      color: #ffffff;
-      box-shadow: 0 0 40px rgba(0,0,0,0.3);
-      margin: 0 auto;
-      margin-top: 4vh;
-      margin-bottom: 4vh;
-    }
-
-    h1 {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      margin-bottom: 0.5rem;
-      color: #66f2ff;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #66f2ff;
-    }
-
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #ddd;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    a {
-      color: #66f2ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 2rem;
-      }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>InstaBoost — Follower & Likes</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>David Rothacker</h1>
-    <p style="text-align: center;">Webentwickler | IT-Spezialist | Elektronikvertriebsberater</p>
+<header class="nav">
+<div class="container">
+<a class="brand" href="index.html">InstaBoost</a>
+<nav>
+<a href="buy.html">Buy</a>
+<a href="order.html">Order</a>
+<a href="#contact">Kontakt</a>
+</nav>
+</div>
+</header>
 
-    <h2>Über mich</h2>
-    <p>
-      Ich bin leidenschaftlicher IT-Enthusiast mit dem Fokus auf Beratung, Instandnahme und dem Vertrieb von elektronischen Produkten und Bauteilen.
-    </p>
 
-    <h2>Lebenslauf</h2>
-    <ul>
-      <li><strong>2023 – Heute:</strong> Mitarbeiter im Bereich Digitalisierungsmanagement</li>
-      <li><strong>2021 – 2023:</strong> Fachhochschulreife</li>
-      <li><strong>2016 – 2021:</strong> Realschule</li>
-    </ul>
+<main>
+<section class="hero">
+<div class="container">
+<h1>Mehr Reichweite. Schnell. Sicher.</h1>
+<p>Kaufe Instagram Follower oder Likes — transparent, sofort sichtbar, sauber präsentiert.</p>
+<div class="cta">
+<a class="btn" href="buy.html">Jetzt bestellen</a>
+<a class="btn ghost" href="#contact">Kontakt</a>
+</div>
+</div>
+</section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Computer-Instandsetzung</li>
-      <li>Hard- und Softwarekenntnisse</li>
-    </ul>
 
-    <h2>Projekte</h2>
-    <p>
-      Portfolio, Web-Apps und Open-Source-Projekte – mehr auf meinem GitHub!
-    </p>
+<section class="features container">
+<div class="card">
+<h3>Schnell</h3>
+<p>Lieferung innerhalb weniger Stunden bis Tage — je nach Menge.</p>
+</div>
+<div class="card">
+<h3>Sicher</h3>
+<p>Keine Weitergabe deiner Daten, diskrete Abwicklung.</p>
+</div>
+<div class="card">
+<h3>Support</h3>
+<p>Persönlicher Support per E-Mail.</p>
+</div>
+</section>
 
-    <h2>Kontakt</h2>
-    <p>
-      📧 E-Mail: <a href="mailto:rothackerdavid@gmail.com">rothackerdavid@gmail.com</a><br>
-      💼 LinkedIn: <a href="https://linkedin.com/in/max" target="_blank">linkedin.com/in/max</a><br>
-      💻 GitHub: <a href="https://github.com/max" target="_blank">github.com/max</a>
-    </p>
 
-    <footer>
-      &copy; 2025 David Rothacker
-    </footer>
-  </div>
+<section class="how container">
+<h2>Wie es funktioniert</h2>
+<ol>
+<li>Auf <strong>Buy</strong> wählen: Follower oder Likes</li>
+<li>Menge auswählen</li>
+<li>Auf <strong>Order</strong> gehen, Kontaktinfos eintragen und absenden</li>
+</ol>
+</section>
+
+
+<section id="contact" class="contact container">
+<h2>Kontakt</h2>
+<p>Schreibe uns: <a href="mailto:deine-email@example.com">deine-email@example.com</a></p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> InstaBoost — Impressum & Datenschutz</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
